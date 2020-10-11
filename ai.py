@@ -13,12 +13,12 @@ model = tf.keras.models.load_model('ai.h5')
 
 # Preprocessing image
 def preprocess(image):
-	image = tf.constant(image)
-	return np.array([image])
+    image = tf.constant(image)
+    return np.array([image])
 
 def display(image):
-	plt.imshow(image,cmap='binary')
-	plt.show()
+    plt.imshow(image,cmap='binary')
+    plt.show()
 
 # Selecting single image
 one_data = preprocess(x_test[0])
@@ -31,4 +31,4 @@ prediction = np.argmax(prediction_conf)
 # Exporting into json
 json_data = {"prediction" : int(prediction)}
 with open('prediction.json','w') as output:
-	json.dump(json_data,output)
+    json.dump(json_data,output)
