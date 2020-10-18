@@ -18,7 +18,7 @@ def preprocess(image):
 
 def display(image):
     plt.imshow(image,cmap='binary')
-    plt.show()
+    plt.savefig('sample.png')
 
 # Selecting single image
 one_data = preprocess(x_test[0])
