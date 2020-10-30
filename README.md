@@ -4,16 +4,10 @@ Neural network dengan Python untuk multiclass image classification MNIST handwri
 # Flask App
 
 ### Flask Pypi
-`pip install Flask`
+`pip install -r requirements.txt`
 
 ### Run app
-`flask run` atau python `wsgi.py`
-
-
-# Libraries
-* Tensorflow 2.x
-* Numpy
-* Matplotlib
+`flask run` atau `python wsgi.py`
 
 # Dataset
 (Keras Dataset)[https://keras.io/api/datasets/mnist/]
