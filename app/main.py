@@ -6,8 +6,7 @@ import cv2
 
 # App and model initializer
 app = Flask(__name__)
-
-title = 'Send us image'
+title = 'Number Recognizer'
 
 # GET method
 @app.route('/')
